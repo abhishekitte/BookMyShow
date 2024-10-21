@@ -1,5 +1,6 @@
 package dev.abhishek.BookMyShow.Models;
 
+import dev.abhishek.BookMyShow.Models.Constant.MovieFeatures;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -15,5 +16,13 @@ public class Movie extends BaseModel{
     private List<Actor> actors;
     @ElementCollection
     @Enumerated(EnumType.STRING)
-    private List<MovieFeature> movieFeatures;
+    private List<MovieFeatures> movieFeatures;
+
+    public Movie() {
+    }
+
+    public Movie(String name, String description) {
+        this.name = name;
+        this.description = description;
+    }
 }

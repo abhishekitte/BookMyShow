@@ -1,5 +1,6 @@
 package dev.abhishek.BookMyShow.Models;
 
+import dev.abhishek.BookMyShow.Models.Constant.AuditoriumFeature;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -17,6 +18,6 @@ public class Auditorium extends BaseModel{
     private List<Seat> seats;
     @ElementCollection
     @Enumerated(EnumType.STRING)
-    private List<AuditoriumFeatures> auditoriumFeatures;
+    private List<AuditoriumFeature> auditoriumFeatures;
 
 }

@@ -1,5 +1,7 @@
 package dev.abhishek.BookMyShow.Models;
 
+import dev.abhishek.BookMyShow.Models.Constant.PaymentMode;
+import dev.abhishek.BookMyShow.Models.Constant.PaymentStatus;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
