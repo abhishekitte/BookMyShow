@@ -12,6 +12,14 @@ import java.util.List;
 public class Theatre extends BaseModel{
     private String name;
     private String address;
+
+    public Theatre(){
+
+    }
+    public Theatre (String name,String address){
+        this.name=name;
+        this.address=address;
+    }
     @OneToMany
     private List<Auditorium> auditoriums;
 }
